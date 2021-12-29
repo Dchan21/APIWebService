@@ -1,0 +1,6 @@
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.csproj.AssemblyReference.cache
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.AssemblyInfoInputs.cache
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.AssemblyInfo.cs
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.csproj.CoreCompileInputs.cache
+D:\Development Proyects\Personal Developments\APIWebService\obj\Debug\netcoreapp3.1\APIWebService.MvcApplicationPartsAssemblyInfo.cache
