@@ -13,8 +13,13 @@ namespace APIWebService.Data.Entities
         [Required]
         public string name { get; set; }
         [Required]
+        public int id_user { get; set; }
+        [ForeignKey("id_user")]
+        public User User { get; set; }
         public string last_name { get; set; }
         public string profile_avatar { get; set; }
+        public string passport { get; set; }
+        public string identification_card { get; set; }
         public int age { get; set; }
         public DateTime birth_date { get; set; }
         public string nationality { get; set; }

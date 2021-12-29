@@ -35,19 +35,15 @@ namespace APIWebService.Data.DBContexts
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<Organization_User> Organization_Users_View { get; set; }
         public DbSet<Course_Organization_Playlist> Course_Organization_Playlist_View { get; set; }
-        public DbSet<Playlist_Video> Playlist_Videos { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Position_Collaborator> Positions_Users { get; set; }
         public DbSet<Reviews_Course> Reviews_Courses { get; set; }
-        public DbSet<Interface_Section> Interface_Section { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
         public DbSet<Subscription_User> Subscriptions_Users { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<Video_Progress> Videos_Progress { get; set; }
-        public DbSet<Email_Template> Email_Templates { get; set; }
-        public DbSet<Email_Send> Email_Sends { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -68,7 +64,6 @@ namespace APIWebService.Data.DBContexts
             modelBuilder.Entity<Course_Module>().HasKey(x => new { x.id_course, x.id_module });
             modelBuilder.Entity<Course_User>().HasKey(x => new { x.id_course, x.id_user });
             modelBuilder.Entity<Module_Video>().HasKey(x => new { x.id_video, x.id_module });
-            modelBuilder.Entity<Playlist_Video>().HasKey(x => new { x.id_video, x.id_course_organization });
             modelBuilder.Entity<Subscription_User>().HasKey(x => new { x.id_subscription, x.id_user });
             modelBuilder.Entity<Organization_User>().HasKey(x => new { x.id_user, x.id_organization });
             modelBuilder.Entity<Course_Organization_Playlist>().HasKey(x => new { x.id_video,x.id_module });

@@ -13,13 +13,8 @@ namespace APIWebService.Data.DBContexts
         {
         }
 
-        public DbSet<Administrator> Administrators { get; set; }
-        public DbSet<Anthropometric_Detail> Anthropometric_Details { get; set; }
-        public DbSet<Anthropometric_Measure> Anthropometric_Measures { get; set; }
-        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Basic_Information> Basics_Information { get; set; }
-        public DbSet<Biochemical_Information> Biochemical_Informations { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Coach> Coaches { get; set; }
         public DbSet<Collaborator> Collaborators { get; set; }
@@ -30,17 +25,9 @@ namespace APIWebService.Data.DBContexts
         public DbSet<Course_Organization> Courses_Organizations { get; set; }
         public DbSet<Course_User> Courses_Users { get; set; }
         public DbSet<Department> Departments { get; set; }
-        public DbSet<Diet> Diets { get; set; }
-        public DbSet<Diet_Food> Diets_Foods { get; set; }
         public DbSet<Entity_Material> Entities_Materials { get; set; }
-        public DbSet<Food> Foods { get; set; }
-        public DbSet<Food_Table> Foods_Tables { get; set; }
-        public DbSet<Form> Forms { get; set; }
-        public DbSet<Identification> Identifications { get; set; }
         public DbSet<Localization> Localizations { get; set; }
-        public DbSet<Life_Style> Life_Styles { get; set; }
         public DbSet<Material> Materials { get; set; }
-        public DbSet<Medical_Information> Medical_Informations { get; set; }
         public DbSet<Module> Modules { get; set; }
         public DbSet<Module_Video_Detail> Module_Video_Details { get; set; }
         public DbSet<Module_Progress> Modules_Progress { get; set; }
@@ -49,21 +36,16 @@ namespace APIWebService.Data.DBContexts
         public DbSet<Organization_User> Organization_Users_View { get; set; }
         public DbSet<Course_Organization_Playlist> Course_Organization_Playlist_View { get; set; }
         public DbSet<Person> Persons { get; set; }
-        public DbSet<Playlist_Video> Playlist_Videos { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Position_Collaborator> Positions_Collaborators { get; set; }
-        public DbSet<Preregister> Preregisters { get; set; }
         public DbSet<Program> Programs { get; set; }
         public DbSet<Reviews_Course> Reviews_Courses { get; set; }
-        public DbSet<Interface_Section> Interface_Section { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
         public DbSet<Subscription_User> Subscriptions_Users { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<Video_Progress> Videos_Progress { get; set; }
-        public DbSet<Email_Template> Email_Templates { get; set; }
-        public DbSet<Email_Send> Email_Sends { get; set; }
 
         /**************************************************************************************************************************************************************************************/
         public DbSet<Aut_Audit> Aut_Audits { get; set; }
@@ -89,7 +71,6 @@ namespace APIWebService.Data.DBContexts
             modelBuilder.Entity<Course_Module>().HasKey(x => new { x.id_course, x.id_module });
             modelBuilder.Entity<Course_User>().HasKey(x => new { x.id_course, x.id_user });
             modelBuilder.Entity<Module_Video>().HasKey(x => new { x.id_video, x.id_module });
-            modelBuilder.Entity<Playlist_Video>().HasKey(x => new { x.id_video, x.id_course_organization });
             modelBuilder.Entity<Subscription_User>().HasKey(x => new { x.id_subscription, x.id_user });
             modelBuilder.Entity<Organization_User>().HasKey(x => new { x.id_user, x.id_organization });
             modelBuilder.Entity<Course_Organization_Playlist>().HasKey(x => new { x.id_video, x.id_module });

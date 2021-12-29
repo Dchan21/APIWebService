@@ -10,9 +10,9 @@ namespace APIWebService.Data.Entities
     public class Person
     {
         public int ID { get; set; }
-        public int id_basic_information { get; set; }
-        [ForeignKey("id_basic_information")]
-        public Basic_Information basic_information { get; set; }
+        public int id_user { get; set; }
+        [ForeignKey("id_user")]
+        public User User { get; set; }
         public int status { get; set; }
         public DateTime created_on {get;}
         public DateTime modified_on {get;}

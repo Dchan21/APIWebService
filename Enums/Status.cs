@@ -1,4 +1,4 @@
-﻿namespace Wellness_SDK.Enums
+﻿namespace APIWebService.Enums
 {
     public enum Status
     {

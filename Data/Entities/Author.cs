@@ -8,9 +8,9 @@ namespace APIWebService.Data.Entities
     public class Author
     {
         public int ID { get; set; }
-        public int id_basic_information { get; set; }
-        [ForeignKey("id_basic_information")]
-        public Basic_Information basic_information { get; set; }
+        public int id_user { get; set; }
+        [ForeignKey("id_user")]
+        public User User { get; set; }
         public string facebook_link { get; set; }
         public string linkedin_link { get; set; }
         public string description { get; set; }

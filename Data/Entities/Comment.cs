@@ -11,12 +11,10 @@ namespace APIWebService.Data.Entities
     {
         public int ID { get; set; }
         [Required]
-        public int id_entity { get; set; }
-        public int entity_type { get; set; }
-        public string comment { get; set; }
         public int id_user { get; set; }
         [ForeignKey("id_user")]
-        public User user { get; set; }
+        public User User { get; set; }
+        public string comment { get; set; }
         public int status {get;set;}
         public DateTime created_on {get;}
         public DateTime modified_on {get;}

@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Wellness_SDK.Utilities
+namespace APIWebService.Utilities
 {
     public static class Constants
     {

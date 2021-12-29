@@ -10,8 +10,7 @@ namespace APIWebService.Data.Entities
     public class User
     {
         public int ID { get; set; }
-        public int id_entity { get; set; }
-        public int user_type { get; set; }
+        public int role { get; set; }
         public int language { get; set; }
         public int status { get; set; }
         public int terms_conditions { get; set; }

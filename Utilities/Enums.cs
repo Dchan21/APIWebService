@@ -1,4 +1,4 @@
-﻿namespace Wellness_SDK.Utilities
+﻿namespace APIWebService.Utilities
 {
     public class Enums
     {
