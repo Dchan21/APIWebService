@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9VO/jfhyYepVOHBym17KE44a4zCXR8pnPwaWIsIwfPs02wth24eQDplZDZF5sJV1uZ+Re7jnpMk1gBe4Fy/Fpw==",
+  "success": true,
+  "projectFilePath": "D:\\Development Proyects\\Personal Developments\\APIWebService\\APIWebService\\APIWebService\\APIWebService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
